@@ -11,10 +11,10 @@ export default function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1800&q=90"
-          alt="Hero car"
+          src="https://images.unsplash.com/photo-1651772365226-bcea711c7e41?w=1800&q=90"
+          alt="Blue Aston Martin Vantage"
           className="w-full h-full object-cover object-center"
-          style={{ filter: 'brightness(0.35)' }}
+          style={{ filter: 'brightness(0.55)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#080D14] via-[#080D14]/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080D14] via-transparent to-transparent" />
@@ -34,12 +34,12 @@ export default function HeroSection() {
 
           {/* Main headline */}
           <h1 className={`font-display leading-none mb-4 transition-all duration-700 delay-100 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <span className="block text-7xl md:text-9xl text-white">YOUR NEXT</span>
-            <span className="block text-7xl md:text-9xl" style={{ color: 'var(--gold)' }}>DRIVE STARTS</span>
-            <span className="block text-7xl md:text-9xl text-white">HERE</span>
+            <span className="block text-5xl sm:text-7xl md:text-9xl text-white">YOUR NEXT</span>
+            <span className="block text-5xl sm:text-7xl md:text-9xl" style={{ color: 'var(--gold)' }}>DRIVE STARTS</span>
+            <span className="block text-5xl sm:text-7xl md:text-9xl text-white">HERE</span>
           </h1>
 
-          <p className={`font-barlow text-lg text-gray-300 mb-8 max-w-xl leading-relaxed transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+          <p className={`font-barlow text-base sm:text-lg text-gray-300 mb-8 max-w-xl leading-relaxed transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             Premium pre-owned vehicles, honest pricing, and a buying experience that respects your time. Welcome to <strong className="text-white">Vico Investments Auto Group</strong>.
           </p>
 

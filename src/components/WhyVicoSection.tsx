@@ -57,10 +57,10 @@ export default function WhyVicoSection() {
             backgroundSize: '20px 20px'
           }} />
           <div className="relative">
-            <h3 className="font-display text-4xl text-white mb-1">READY TO FIND YOUR CAR?</h3>
+            <h3 className="font-display text-2xl md:text-4xl text-white mb-1">READY TO FIND YOUR CAR?</h3>
             <p className="text-gray-400 font-condensed tracking-wide">Visit us at our Miami location or schedule a virtual tour.</p>
           </div>
-          <a href="#appointment" className="relative shrink-0 bg-gold text-black font-condensed font-bold tracking-widest uppercase px-10 py-4 text-lg hover:bg-[#E8C876] transition-colors whitespace-nowrap">
+          <a href="#appointment" className="relative w-full md:w-auto text-center shrink-0 bg-gold text-black font-condensed font-bold tracking-widest uppercase px-10 py-4 text-lg hover:bg-[#E8C876] transition-colors whitespace-nowrap">
             Schedule a Visit →
           </a>
         </div>

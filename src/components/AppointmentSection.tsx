@@ -80,7 +80,7 @@ export default function AppointmentSection() {
                     <input type="text" placeholder="Full Name *" value={form.name} onChange={e => setForm({...form, name: e.target.value})}
                       className="bg-transparent text-white font-condensed text-sm tracking-wide flex-1 outline-none placeholder-gray-600" />
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="flex items-center gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                       <Mail size={16} className="text-gray-600" />
                       <input type="email" placeholder="Email *" value={form.email} onChange={e => setForm({...form, email: e.target.value})}
@@ -92,7 +92,7 @@ export default function AppointmentSection() {
                         className="bg-transparent text-white font-condensed text-sm flex-1 outline-none placeholder-gray-600" />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="flex items-center gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                       <Calendar size={16} className="text-gray-600" />
                       <input type="date" value={form.date} onChange={e => setForm({...form, date: e.target.value})}
