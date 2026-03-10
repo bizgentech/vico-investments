@@ -25,7 +25,7 @@ const features = [
 
 export default function WhyVicoSection() {
   return (
-    <section id="why-vico" className="py-24 bg-[#0D0D0D]">
+    <section id="why-vico" className="py-24 bg-[#0D1117]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -39,7 +39,7 @@ export default function WhyVicoSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((f, i) => (
-            <div key={i} className="p-8 border border-[#1E1E1E] bg-[#111] hover:border-[var(--gold)] hover:bg-[#141414] transition-all duration-300 group">
+            <div key={i} className="p-8 border border-[#21262D] bg-[#161B22] hover:border-[var(--gold)] hover:bg-[#161B22] transition-all duration-300 group">
               <div className="mb-5">
                 <f.icon size={32} className="gold transition-transform duration-300 group-hover:scale-110" />
               </div>
@@ -51,7 +51,7 @@ export default function WhyVicoSection() {
 
         {/* Bottom CTA banner */}
         <div className="mt-12 relative overflow-hidden p-10 flex flex-col md:flex-row items-center justify-between gap-6"
-             style={{ background: 'linear-gradient(135deg, #141414, #1A1A0F)' }}>
+             style={{ background: 'linear-gradient(135deg, #161B22, #1A1A0F)' }}>
           <div className="absolute inset-0 opacity-5" style={{
             backgroundImage: 'repeating-linear-gradient(45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%)',
             backgroundSize: '20px 20px'

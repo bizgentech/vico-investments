@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060606] border-t border-[#111]">
+    <footer className="bg-[#080D14] border-t border-[#111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 p-3 bg-[#111] border border-[#1A1A1A]">
+            <div className="mt-6 p-3 bg-[#161B22] border border-[#1C2128]">
               <div className="font-condensed text-xs tracking-widest uppercase text-gray-600 mb-1">Hours</div>
               <div className="font-condensed text-sm text-gray-400">Mon – Sat: 9:00 AM – 7:00 PM</div>
               <div className="font-condensed text-sm text-gray-600">Sunday: Closed</div>

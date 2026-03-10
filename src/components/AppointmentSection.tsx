@@ -26,7 +26,7 @@ export default function AppointmentSection() {
   const timeSlots = ['9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM']
 
   return (
-    <section id="appointment" className="py-24 bg-[#0D0D0D]">
+    <section id="appointment" className="py-24 bg-[#0D1117]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left */}
@@ -55,7 +55,7 @@ export default function AppointmentSection() {
             </div>
 
             {/* Map placeholder */}
-            <div className="h-48 bg-[#141414] border border-[#222] flex items-center justify-center">
+            <div className="h-48 bg-[#161B22] border border-[#222] flex items-center justify-center">
               <div className="text-center text-gray-600">
                 <div className="font-condensed text-sm tracking-widest uppercase mb-1">Vico Investments Auto Group</div>
                 <div className="font-condensed text-xs text-gray-700">Miami, Florida</div>
@@ -64,7 +64,7 @@ export default function AppointmentSection() {
           </div>
 
           {/* Right - Form */}
-          <div className="bg-[#111] border border-[#222] p-8">
+          <div className="bg-[#161B22] border border-[#222] p-8">
             {submitted ? (
               <div className="flex flex-col items-center justify-center py-12 text-center">
                 <CheckCircle size={48} className="gold mb-4" />
@@ -75,36 +75,36 @@ export default function AppointmentSection() {
               <>
                 <h3 className="font-display text-2xl text-white mb-6 tracking-wide">BOOK A VISIT</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-2 bg-[#1A1A1A] border border-[#2A2A2A] px-3 py-3">
+                  <div className="flex items-center gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                     <User size={16} className="text-gray-600" />
                     <input type="text" placeholder="Full Name *" value={form.name} onChange={e => setForm({...form, name: e.target.value})}
                       className="bg-transparent text-white font-condensed text-sm tracking-wide flex-1 outline-none placeholder-gray-600" />
                   </div>
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="flex items-center gap-2 bg-[#1A1A1A] border border-[#2A2A2A] px-3 py-3">
+                    <div className="flex items-center gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                       <Mail size={16} className="text-gray-600" />
                       <input type="email" placeholder="Email *" value={form.email} onChange={e => setForm({...form, email: e.target.value})}
                         className="bg-transparent text-white font-condensed text-sm flex-1 outline-none placeholder-gray-600" />
                     </div>
-                    <div className="flex items-center gap-2 bg-[#1A1A1A] border border-[#2A2A2A] px-3 py-3">
+                    <div className="flex items-center gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                       <Phone size={16} className="text-gray-600" />
                       <input type="tel" placeholder="Phone *" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}
                         className="bg-transparent text-white font-condensed text-sm flex-1 outline-none placeholder-gray-600" />
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="flex items-center gap-2 bg-[#1A1A1A] border border-[#2A2A2A] px-3 py-3">
+                    <div className="flex items-center gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                       <Calendar size={16} className="text-gray-600" />
                       <input type="date" value={form.date} onChange={e => setForm({...form, date: e.target.value})}
                         className="bg-transparent text-white font-condensed text-sm flex-1 outline-none" />
                     </div>
                     <select value={form.time} onChange={e => setForm({...form, time: e.target.value})}
-                      className="bg-[#1A1A1A] border border-[#2A2A2A] text-white font-condensed text-sm px-3 py-3 outline-none">
+                      className="bg-[#1C2128] border border-[#2A2A2A] text-white font-condensed text-sm px-3 py-3 outline-none">
                       <option value="">Select Time</option>
                       {timeSlots.map(t => <option key={t} value={t}>{t}</option>)}
                     </select>
                   </div>
-                  <div className="flex items-start gap-2 bg-[#1A1A1A] border border-[#2A2A2A] px-3 py-3">
+                  <div className="flex items-start gap-2 bg-[#1C2128] border border-[#2A2A2A] px-3 py-3">
                     <MessageSquare size={16} className="text-gray-600 mt-0.5" />
                     <textarea placeholder="What cars are you interested in? (optional)" value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={3}
                       className="bg-transparent text-white font-condensed text-sm flex-1 outline-none resize-none placeholder-gray-600" />

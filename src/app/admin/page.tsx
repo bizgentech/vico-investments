@@ -92,13 +92,13 @@ export default function AdminPage() {
 
   if (!authenticated) {
     return (
-      <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center">
-        <div className="bg-[#111] border border-[#222] p-10 w-full max-w-md">
+      <div className="min-h-screen bg-[#0D1117] flex items-center justify-center">
+        <div className="bg-[#161B22] border border-[#222] p-10 w-full max-w-md">
           <div className="font-display text-3xl gold mb-2">VICO ADMIN</div>
           <p className="text-gray-500 font-condensed text-sm mb-8 tracking-wide">Inventory Management Portal</p>
           <input type="password" placeholder="Admin Password" value={password} onChange={e => setPassword(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && login()}
-            className="w-full bg-[#1A1A1A] border border-[#333] text-white font-condensed px-4 py-3 outline-none mb-4 tracking-wide" />
+            className="w-full bg-[#1C2128] border border-[#333] text-white font-condensed px-4 py-3 outline-none mb-4 tracking-wide" />
           <button onClick={login} className="w-full bg-gold text-black font-condensed font-bold tracking-widest uppercase py-3 hover:bg-[#E8C876] transition-colors">
             LOGIN →
           </button>
@@ -108,8 +108,8 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
-      <div className="bg-[#111] border-b border-[#222] px-6 py-4 flex items-center justify-between">
+    <div className="min-h-screen bg-[#0D1117]">
+      <div className="bg-[#161B22] border-b border-[#222] px-6 py-4 flex items-center justify-between">
         <div className="font-display text-2xl gold">VICO ADMIN</div>
         <div className="flex items-center gap-4">
           <button onClick={() => setTab('cars')} className={`font-condensed text-sm tracking-widest uppercase px-4 py-2 transition-colors ${tab === 'cars' ? 'bg-gold text-black' : 'text-gray-400 hover:text-white'}`}>Cars ({cars.length})</button>
@@ -130,7 +130,7 @@ export default function AdminPage() {
             </div>
 
             {showAddForm && (
-              <div className="bg-[#111] border border-[#222] p-6 mb-6">
+              <div className="bg-[#161B22] border border-[#222] p-6 mb-6">
                 <h3 className="font-display text-xl text-white mb-4">ADD NEW VEHICLE</h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {[
@@ -144,7 +144,7 @@ export default function AdminPage() {
                     <div key={field.key} className={field.full ? 'col-span-2 md:col-span-3' : ''}>
                       <label className="block font-condensed text-xs tracking-widest uppercase text-gray-500 mb-1">{field.label}</label>
                       <input type="text" value={(newCar as Record<string, unknown>)[field.key] as string} onChange={e => setNewCar({...newCar, [field.key]: e.target.value})}
-                        className="w-full bg-[#1A1A1A] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none" />
+                        className="w-full bg-[#1C2128] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none" />
                     </div>
                   ))}
                   {[
@@ -155,13 +155,13 @@ export default function AdminPage() {
                     <div key={field.key}>
                       <label className="block font-condensed text-xs tracking-widest uppercase text-gray-500 mb-1">{field.label}</label>
                       <input type="number" value={(newCar as Record<string, unknown>)[field.key] as number} onChange={e => setNewCar({...newCar, [field.key]: parseInt(e.target.value)})}
-                        className="w-full bg-[#1A1A1A] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none" />
+                        className="w-full bg-[#1C2128] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none" />
                     </div>
                   ))}
                   <div>
                     <label className="block font-condensed text-xs tracking-widest uppercase text-gray-500 mb-1">Transmission</label>
                     <select value={newCar.transmission} onChange={e => setNewCar({...newCar, transmission: e.target.value})}
-                      className="w-full bg-[#1A1A1A] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none">
+                      className="w-full bg-[#1C2128] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none">
                       <option>Automatic</option>
                       <option>Manual</option>
                       <option>CVT</option>
@@ -170,7 +170,7 @@ export default function AdminPage() {
                   <div>
                     <label className="block font-condensed text-xs tracking-widest uppercase text-gray-500 mb-1">Fuel Type</label>
                     <select value={newCar.fuelType} onChange={e => setNewCar({...newCar, fuelType: e.target.value})}
-                      className="w-full bg-[#1A1A1A] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none">
+                      className="w-full bg-[#1C2128] border border-[#333] text-white font-condensed text-sm px-3 py-2.5 outline-none">
                       <option>Gasoline</option>
                       <option>Hybrid</option>
                       <option>Electric</option>
@@ -197,8 +197,8 @@ export default function AdminPage() {
               {cars.map(car => {
                 const images = JSON.parse(car.images || '[]')
                 return (
-                  <div key={car.id} className="bg-[#111] border border-[#1E1E1E] p-4 flex items-center gap-4">
-                    <div className="w-24 h-16 bg-[#1A1A1A] overflow-hidden shrink-0">
+                  <div key={car.id} className="bg-[#161B22] border border-[#21262D] p-4 flex items-center gap-4">
+                    <div className="w-24 h-16 bg-[#1C2128] overflow-hidden shrink-0">
                       {images[0] && <img src={images[0]} alt={car.title} className="w-full h-full object-cover" />}
                     </div>
                     <div className="flex-1">
@@ -229,7 +229,7 @@ export default function AdminPage() {
             <h2 className="font-display text-3xl text-white mb-6">APPOINTMENTS</h2>
             <div className="grid gap-4">
               {appointments.map(apt => (
-                <div key={apt.id} className="bg-[#111] border border-[#1E1E1E] p-5">
+                <div key={apt.id} className="bg-[#161B22] border border-[#21262D] p-5">
                   <div className="flex items-start justify-between">
                     <div>
                       <div className="font-condensed font-semibold text-white text-lg">{apt.name}</div>

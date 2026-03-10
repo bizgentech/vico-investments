@@ -10,17 +10,17 @@
 :root {
   --gold: #C9A84C;
   --gold-light: #E8C876;
-  --dark: #0A0A0A;
-  --dark-2: #141414;
-  --dark-3: #1E1E1E;
-  --text-muted: #9CA3AF;
+  --dark:   #0D1117;
+  --dark-2: #161B22;
+  --dark-3: #21262D;
+  --text-muted: #8B949E;
 }
 
 * { box-sizing: border-box; }
 
 body {
   background: var(--dark);
-  color: white;
+  color: #E6EDF3;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.7) 50%, rgba(10,10,10,0.4) 100%);
+  background: linear-gradient(135deg, rgba(13,17,23,0.95) 0%, rgba(13,17,23,0.7) 50%, rgba(13,17,23,0.4) 100%);
 }
 
 .section-divider {

@@ -11,22 +11,23 @@ export default function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1800&q=80"
+          src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1800&q=90"
           alt="Hero car"
           className="w-full h-full object-cover object-center"
           style={{ filter: 'brightness(0.35)' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080D14] via-[#080D14]/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080D14] via-transparent to-transparent" />
       </div>
 
-      {/* Gold accent line */}
-      <div className="absolute left-0 top-0 bottom-0 w-1 z-10" style={{ background: 'linear-gradient(180deg, transparent, var(--gold), transparent)' }} />
+      {/* Blue-to-gold accent line */}
+      <div className="absolute left-0 top-0 bottom-0 w-1 z-10"
+        style={{ background: 'linear-gradient(180deg, transparent, #4A90E2, var(--gold), transparent)' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="max-w-3xl">
           {/* BBB badge */}
-          <div className={`inline-flex items-center gap-2 border border-[#333] bg-[#111]/80 px-3 py-1.5 mb-6 transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+          <div className={`inline-flex items-center gap-2 border border-[#333] bg-[#161B22]/80 px-3 py-1.5 mb-6 transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <Shield size={14} className="gold" />
             <span className="font-condensed text-xs tracking-widest uppercase text-gray-400">BBB Accredited Business · Miami, FL</span>
           </div>
